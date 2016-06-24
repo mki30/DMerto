@@ -1,0 +1,14 @@
+﻿body { }
+
+.wrapper { margin: 0 auto; text-align:; background-color: #AB2929; padding: 5px 0px 5px 5px; }
+
+.wrapper a { font-family: helvetica, 'trebuchet ms' , verdana, arial; color: White; font-size: 12px; padding-left: 5px; padding-right: 5px; border-right: 1px solid white; }
+
+.wrapper a:last-child { border: none; }
+
+.banner { background-color: Silver; background-image: url('../Images/Delhimetro/parking.jpg'); height: 190px; width:500px; }
+
+.inr-cnt-cntr-hdn h1 { color: #676768; font-family: arial; font-size: 14px; font-weight: bold; background: url(../images/interheader.jpg) repeat-x; height: 47px; line-height: 47px; }
+cf:before, .cf:after{ content: ""; display: table;}
+.cf:after { clear: both;} 
+.cf { zoom: 1;}

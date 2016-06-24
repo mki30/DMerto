@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    
+    var StnFrom= 63;
+    var StnTo = 23;
+    function CallFillForm()
+    {
+       var script = "FillForm(" + StnFrom + "," + StnTo + ");";
+        chrome.tabs.executeScript(null, { code: script });
+    }
+
+    function StartTimer()
+    {
+        chrome.tabs.executeScript(null, { code: "StartTimer()" });
+    }
+    function StopTimer()
+    {
+        chrome.tabs.executeScript(null, { code: "StopTimer()" });
+    }
+    function Next()
+    {
+        chrome.tabs.executeScript(null, { code: "Next()" });
+    }
+</script>
+<input type="button" onclick="CallFillForm()" value="Fill Form" /> 
+<input type="button" onclick="StartTimer()" value="Start Timer" />
+<input type="button" onclick="StopTimer()" value="Stop Timer" />
+<input type="button" onclick="Nextr()" value=" Next Fill" />

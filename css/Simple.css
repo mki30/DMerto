@@ -1,0 +1,72 @@
+﻿body{font-family:Arial;font-size:12px;margin: 0 auto;background:white}
+tr{background-color:White;}
+table{background-color:#c0c0c0;}
+input{background-color:#FFFFFF;  }
+select{background-color:#FFFFFF;}
+
+a { 
+    text-decoration: none;
+    color: Blue;
+}
+
+
+.grid-5
+{
+   float: right;
+   height: 0px;
+}
+
+ .account-area
+{
+   margin: 0;
+   position: relative;
+   top: 8px;
+   float: right;
+   z-index: 99999999;
+   text-align: center;
+   font-size: 11px;
+}
+ .account-area a
+   {
+       font-size: 12px;
+       text-decoration: none;
+       color:white;
+   }
+
+   .account-area li a:hover
+   {
+       color:Red
+        !important;
+   }
+
+   .account-area > li
+   {
+       display: block;
+       float: left;
+       margin-left: 0;
+       height: 15px;
+       border: 0px solid #fff;
+       border-left: 1px solid #ccc;
+   }
+
+ .account-area > li:first-child
+ {
+   border-left: none;
+ }
+
+  .account-area > li, .account-area > li span, .account-area 
+   {
+    font-size: 15px; 
+    left: 0px;
+    height: 15px;
+    }
+
+.account-area-hd
+{
+   display: none;
+}
+
+.account-area-dropdown.user
+{
+   padding: 0 5px 0 5px;
+}

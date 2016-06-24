@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="Language" content="English" />
+    <meta http-equiv="Expires" content="never" />
+    <meta http-equiv="CACHE-CONTROL" content="PUBLIC" />
+    <meta name="Designer" content="RRA Soft" />
+    <meta name="Revisit-After" content="2 days" />
+    <meta name="distribution" content="Global" />
+    <meta name="Robots" content="Index,Follow" />
+    <meta name="city" content="Delhi" />
+    <meta name="country" content="India" />
+    <link rel="shortcut icon" href="images/favicondelhimetro.ico" />
+    <link href="css/Main.css" rel="stylesheet" type="text/css" />
+    <link href="css/Simple.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        var BasePath = '<%= ResolveClientUrl("~") %>';
+
+        function SetLanguage(Lang)
+        {
+            document.getElementById("txtLanguage").value = Lang;
+        }
+    </script>
+    <style type="text/css">
+        .button { border: 1px solid #8ec1da; background-color: #ddeef6; border-radius: 2px; box-shadow: inset 0 1px 3px #fff, inset 0 -15px #cbe6f2, 0 0 3px #8ec1da; -o-box-shadow: inset 0 1px 3px #fff, inset 0 -15px #cbe6f2, 0 0 3px #8ec1da; -webkit-box-shadow: inset 0 1px 3px #fff, inset 0 -15px #cbe6f2, 0 0 3px #8ec1da; -moz-box-shadow: inset 0 1px 3px #fff, inset 0 -15px #cbe6f2, 0 0 3px #8ec1da; color: red; text-shadow: 0 1px #fff; padding: 1px 5px; }
+        .wrapper { font-weight: bold; text-shadow: 3px 3px 3px black; }
+    </style>
+</head>
+<body>
+    <div style="width: 800px; margin: auto;">
+        <form id="form1" runat="server">
+        <asp:TextBox ID="txtLanguage" runat="server"></asp:TextBox>
+        <img src="<%=ResolveClientUrl("~/images/delhimetro/hd-bg-red.jpg")%>" alt="Delhi Metro Logo" style="float: left" />
+        <h1 style="text-shadow: 4px 4px 4px #ccc;">
+            &nbsp;<a href="<%=ResolveClientUrl("~/default.aspx")%>">Delhi Metro</a>
+            <div style="float: right">
+                <asp:Button ID="btnHindi" runat="server" class="button" Text="हिंदी" meta:resourcekey="btnHindiResource1" OnClientClick="SetLanguage('hi-IN')" />
+                <asp:Button ID="btnEnglish" runat="server" Text="English" class="button" meta:resourcekey="btnEnglishResource1" OnClientClick="SetLanguage('en-US')" /></div>
+        </h1>
+        <div class="wrapper">
+            <a href="<%=ResolveClientUrl("~/default.aspx")%>">
+                <asp:Label ID="Label1" runat="server" Text="Home" meta:resourcekey="Home"></asp:Label></a>
+            <%--<a href="<%=ResolveClientUrl("~/station")%>">
+            <asp:Label ID="Label2" runat="server" Text="Stations" meta:resourcekey="Stations"></asp:Label>
+            </a> --%>
+            <a href="<%=ResolveClientUrl("~/route")%>">
+                <asp:Label ID="Label3" runat="server" Text="Routes" meta:resourcekey="Routes"></asp:Label></a> <a href="<%=ResolveClientUrl("~/fare")%>">
+                    <asp:Label ID="Label5" runat="server" Text="MetroFares" meta:resourcekey="MetroFares"></asp:Label></a> <a href="<%=ResolveClientUrl("~/MetroStationNumber")%>">
+                        <asp:Label ID="Label2" runat="server" Text="Stations" meta:resourcekey="Stations"></asp:Label></a> <a href="<%=ResolveClientUrl("~/line")%>">
+                            <asp:Label ID="lblLine" runat="server" meta:resourcekey="lblLine"></asp:Label></a> <a href="<%=ResolveClientUrl("~/FeederBus")%>">
+                                <asp:Label ID="Label4" runat="server" Text="FeederBus" meta:resourcekey="FeederBus"></asp:Label></a> <a href="<%=ResolveClientUrl("~/AboutDelhiMetro")%>">
+                                    <asp:Label ID="Label6" runat="server" Text="AboutDelhiMetro" meta:resourcekey="AboutDelhiMetro"></asp:Label></a> <a href="<%=ResolveClientUrl("~/ContactUs ")%>">
+                                        <asp:Label ID="Label7" runat="server" Text="Contactus" meta:resourcekey="Contactus"></asp:Label></a>
+        </div>
+        <div id="dataArea">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <br />
+        <div id="footer" class="cf">
+            <div class="wrapper" style="text-align: center;">
+                <a href="<%=ResolveClientUrl("~/Lost ")%>">
+                    <asp:Label ID="Label10" runat="server" Text="LostandFound  " meta:resourcekey="LostandFound"></asp:Label></a> <a href="<%=ResolveClientUrl("~/FAQs ")%>">
+                        <asp:Label ID="Label9" runat="server" Text="FAQs  " meta:resourcekey="FAQs"></asp:Label></a> <a href="<%=ResolveClientUrl("~/CommunicationGuide")%>">
+                            <asp:Label ID="Label8" runat="server" Text="Communication Guide" meta:resourcekey="CommunicationGuide"></asp:Label></a> <a href="<%=ResolveClientUrl("~/PrivacyPolicy ")%>">
+                                <asp:Label ID="Label11" runat="server" Text="PrivacyPolicy  " meta:resourcekey="PrivacyPolicy"></asp:Label></a> <a href="<%=ResolveClientUrl("~/PassengerInformation.aspx")%>">
+                                    <asp:Label ID="Label12" runat="server" Text="Passenger Information  " meta:resourcekey="PassengerInformation"></asp:Label></a>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

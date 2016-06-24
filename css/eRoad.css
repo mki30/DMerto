@@ -1,0 +1,368 @@
+﻿html, body{
+height:715px;
+width:100%; 
+margin:0;padding:0;
+}
+
+body
+{
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    background: url( '../images/main-bg.gif' ) scroll center top;
+}
+TR
+{
+    background-color: White;
+}
+TABLE
+{
+    background-color: #c0c0c0;
+    text-indent: 3px;
+}
+
+.tableBorder td
+{
+    border-right: #cccccc 1px solid;
+}
+
+.boderLeft
+{
+    border-left: #cccccc 1px solid;
+    width: 12px;
+}
+.Content
+{
+    border-bottom: #A6C9E2 1px solid;
+}
+.Content2
+{
+    border-bottom: #A6C9E2 1px solid;
+    border-left: #A6C9E2 1px solid;
+    border-right: #A6C9E2 1px solid;
+    width: 770px;
+    text-indent: 0px;
+}
+
+.Content3
+{
+    border-left: #A6C9E2 1px solid;
+    border-right: #A6C9E2 1px solid;
+    width: 770px;
+    text-indent: 0px;
+}
+
+
+a
+{
+    color: #000099;
+    text-decoration: none;
+}
+a:hover
+{
+    color: red;
+}
+.tagNumber
+{
+    width: 8px;
+    color: #FD5722;
+    background-color: #ffffff;
+    text-align: left;
+    text-indent: 0px;
+    font-size: 11px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+INPUT
+{
+    background-color: #ffffff;
+    font-size: 12px;
+    border-width: 1px;
+}
+#divCalender
+{
+    visibility: hidden;
+    height: 153px;
+    background-color: #ffffff;
+    width: 100px;
+    text-align: center;
+    left: 513px;
+    position: absolute;
+    top: 119px;
+    z-index: 140;
+}
+p
+{
+    margin: 10px 10px 10px 10px;
+    line-height: 130%;
+    color: #ffffff;
+    background-color: inherit;
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+    text-align: justify;
+}
+#tableTop
+{
+    width: 770px;
+}
+#tableTop td
+{
+    background: #ffffff;
+}
+#tdHeadLeft
+{
+    border-bottom: #A6C9E2 1px solid;
+}
+.ButtonOutter
+{
+  border-bottom: solid 1px #404040;
+    border-top: solid 1px #FFFFFF;
+}
+.ButtonInner
+{
+    border-bottom: solid 1px #808080;
+}
+.DarkBlue, #tableSelection td, #tableSelection tr, #tableSelectionMiddle td
+{
+    background-color: #8DC3E9;
+}
+
+select
+{
+    background-color: #ffffff;
+    font-size: 12px;
+}
+
+ul
+{
+	padding-left:20px;
+}
+
+.MainContent
+{
+    border-left: #A6C9E2 1px solid;
+    border-right: #A6C9E2 1px solid;
+    width: 770px;
+    text-indent: 0px;
+    margin: auto; 
+    height:100%;
+    background-color:white;
+}
+
+.AdminNote
+{
+    background-color:#FFCFCF;color:Red;font-weight:bolder;margin-left:3px;
+}
+
+.tableStationSelector
+{
+    margin:auto;margin:10px;width:740px;background-color: #EFF7FF;
+}
+
+.BackColor2, #divExtraInfo td, .tableStationSelector td, #tableFilter table,#tableFilter td ,#tableFilter tr
+{
+    background-color:#EFF7FF;
+}
+
+.Steps
+{
+    width:3px;
+    vertical-align:top;
+}
+
+.Steps2
+{
+    border-left: #cccccc 1px solid;
+    width:3px;
+    vertical-align:top;
+}
+
+#tableFilter table,#tableFilter td ,#tableFilter tr
+{
+    background-color:#FBF8EB;
+}
+
+.Transparent
+{
+    background-color:transparent;
+}
+
+.Transparent tr
+{
+    background-color:transparent;
+}
+
+/*Auto Complete*/
+
+.autocomplete-w1 { background:url(Images/shadow.png) no-repeat bottom right; position:absolute; top:0px; left:0px; margin:8px 0 0 6px; /* IE6 fix: */ _background:none; _margin:0; }
+.autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:1px 1px; white-space:nowrap; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }
+
+.JourneyDetails
+{
+    font: 12px Arial,Helvetica,sans-serif;
+}
+.JourneyDetail 
+{
+    color:Gray;
+}
+
+.fromto
+{
+    color:Black;
+}
+
+.company
+{
+    color:Black;
+}
+
+.departure
+{
+    color:Black;
+}
+
+.PassengerList
+{
+    color:Black
+}
+
+.Return
+{
+border-bottom: 1px solid #4C88BE;
+font-weight: bold;
+background-color: #8DC3E9;
+color: white;
+padding: 5px;
+font-size: 12px;
+}
+
+.Onward
+{
+border-bottom: 1px solid #4C88BE;
+font-weight: bold;
+background-color: #8DC3E9;
+color: white;
+padding: 5px;
+font-size: 12px;
+}
+
+.Book
+{
+border-bottom: 1px solid #4C88BE;
+font-weight: bold;
+background-color: #8DC3E9;
+color: white;
+padding: 5px;
+font-size: 12px;
+}
+
+.PriceDetail
+{
+   color:Gray;
+}
+
+.inputtransactionfee
+{
+width: 40px;
+background-color: #F2EFEF;
+border: 0;
+padding: 2px 0;
+text-align: center;
+   color:Black; 
+}
+
+.inputGatewayFees
+{
+width: 40px;
+background-color: #F2EFEF;
+border: 0;
+padding: 2px 0;
+text-align: center;
+color:Black;
+}
+
+.inputdeliverycharges
+{
+width: 40px;
+background-color: #F2EFEF;
+border: 0;
+padding: 2px 0;
+text-align: center;
+color:Black;
+}
+
+.inputTotalJourneyprice
+{
+width: 40px;
+background-color: #F2EFEF;
+border: 0;
+padding: 2px 0;
+text-align: center;
+color:Black;
+}
+
+.PriceDetails
+{
+border-bottom: 1px solid #4C88BE;
+font-weight: bold;
+background-color: #8DC3E9;
+color: white;
+padding: 5px;
+font-size: 12px;
+}
+
+.MyBookings
+{
+border-bottom: 1px solid #4C88BE;
+font-weight: bold;
+background-color: #8DC3E9;
+color: white;
+padding: 5px;
+font-size: 12px;
+}
+
+
+.SeatNumber
+{
+width: 40px;
+background-color: #F2EFEF;
+border: 0;
+padding: 2px 0;
+text-align: center;
+}
+
+.Price
+{
+width: 40px;
+background-color: #F2EFEF;
+border: 0;
+padding: 2px 0;
+text-align: center;
+}
+
+.SeatCount
+{
+width: 40px;
+background-color: #F2EFEF;
+border: 0;
+padding: 2px 0;
+text-align: center;
+}
+
+.TotalFare
+{
+width: 40px;
+background-color: #F2EFEF;
+border: 0;
+padding: 2px 0;
+text-align: center;	
+}
+
+.passenger
+{
+font-weight: bold;
+font-size: 12px;
+color: #6C6C6C;
+}
